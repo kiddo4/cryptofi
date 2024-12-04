@@ -1,0 +1,13 @@
+targets:
+  $default:
+    builders:
+      riverpod_generator:
+        enabled: true
+        generate_for:
+          include:
+            - lib/**/*.dart
+      source_gen|combining_builder:
+        options:
+          ignore_for_file:
+            - type=lint
+            - duplicate_ignore
